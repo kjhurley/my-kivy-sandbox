@@ -2,6 +2,10 @@ AccountDetailsForm:
 
 <AccountDetailsForm>:
     anchor_y: 'top'
+    server_box: server_input
+    username_box: username_input
+    password_box: password_input
+
     BoxLayout:
         orientation: "vertical"
         height: "200dp"
@@ -15,13 +19,16 @@ AccountDetailsForm:
             Label:
                 text: "Server"
             TextInput:
+                id: server_input
             Label:
                 text: "Username"
             TextInput:
+                id: username_input
             Label:
                 text: "Password"
             TextInput:
                 password: True
+                id: password_input
         Button:
             size_hint_y: None
             height: "40dp"
